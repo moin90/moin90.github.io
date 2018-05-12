@@ -1,0 +1,1231 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	color: antiquewhite;
+	letter-spacing: 1.2px;
+}
+
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.hamburger,
+.exit-responsive {
+	display: none;
+}
+
+
+.show.hamburgerNav {
+	display: block;
+}
+
+
+h1, h2, h3 {
+	font-family: 'Butterfly Kids', cursive;
+}
+
+h2 {
+	font-size: 4.5rem;
+	margin: 5px 0;
+	letter-spacing: 1.5px;
+}
+
+
+p {
+	line-height: 1.5;
+}
+
+header {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(assets/liamGrandma.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+header h1 {
+	font-family: 'Butterfly Kids', cursive;
+	font-size: 9rem;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 120px;
+} 
+
+header h1 a {
+	text-decoration: none;
+	color: antiquewhite;
+	transition: 0.2s all;
+}
+
+
+
+ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+
+ul a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: antiquewhite;
+	padding: 10px;	
+	letter-spacing: 2px;
+	transition: 0.2s all;
+	font-size: 1.8rem;
+
+}
+
+h1 a:hover {
+	color: cyan;
+}
+
+ul a:hover {
+	color: snow;
+}
+
+.level2 {
+	display: flex;
+	align-items: center;
+	padding-top: 25px;
+	padding-left: 50px;
+	background-color: #1B4D59;
+}
+
+.level2Text {
+	width: 50%;
+	margin-right: 100px;
+}
+
+.gold {
+	color: gold;
+}
+
+
+.hospitalPic {
+	position: relative;
+	width: 50%;
+}
+
+.hospitalPic img {
+	width: 90%;
+	border: 1px solid antiquewhite;
+}
+
+
+.overlay {
+	display: none;
+	width: 90%;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	color: black;
+	background: rgba(255,255,255,0.4);
+
+}
+
+.hospitalPic:hover .overlay {
+
+	display: block;
+	transition: all 0.5s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
+
+}
+
+
+.level3 {
+	display: flex;
+	align-items: center;
+	padding-top: 25px;
+	padding-left: 50px;
+	background-color: #9FD3BD;
+}
+
+
+.level3Text {
+	width: 75%;
+	margin-right: 240px;
+	color: black;
+}
+
+.edmBaby {
+	width: 50%;
+}
+
+.edmBaby video {
+	border: 1px solid black;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.level4 {
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+	padding-top: 25px;
+	background-color: #1B4D59;
+}
+
+.level4Text {
+	width: 75%;
+	margin-right: 240px;
+}
+
+
+.edmBaby video {
+	width: 66%;
+	border: 1px solid antiquewhite;
+}
+
+.level2, .level3, .level4, .level5 {
+	padding-bottom: 40px;
+}
+
+.level5 {
+	display: flex;
+	align-items: center;
+	background: #9FD3BD;
+	color: black;
+	padding-left: 50px;
+
+}
+
+.level5Text {
+	width: 50%;
+}
+
+.monsterGame {
+	display: flex;
+	flex-direction: column;
+	padding-top: 25px;
+}
+
+.monsterGame img {
+	width: 45%;
+	border: 1px solid antiquewhite;
+	margin-left: 210px;
+}
+
+.monsterGame iframe {
+	border: 1px solid antiquewhite;
+	margin-top: 50px;
+	margin-left: 60px;
+
+}
+
+.level6 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #1B4D59;
+	padding-top: 25px;
+	padding-left: 50px;
+	padding-bottom: 25px;
+}
+
+.level6Text {
+	width: 50%;
+}
+
+.selfie video {
+	width: 50%;
+	margin-left: 167px;
+	border: 1px solid antiquewhite;
+}
+
+.selfie {
+	width: 50%;
+}
+
+.gallery {
+	width: 88%;
+	margin-top: 50px;
+	margin-left: 17px;
+}
+
+.gallery img {
+	border: 1px solid antiquewhite;
+}
+
+
+.level7 {
+	background: #9FD3BD;
+	color: black;
+	padding-top: 25px;
+	padding-left: 50px;
+}
+
+.level7Text {
+	width: 90%;
+}
+
+.memoryVid {
+	margin-left: 120px;
+	padding-top: 25px;
+}
+
+.memoryVid video {
+	width: 76.8%;
+}
+
+.lightning, .lightning img {
+	width: 25%;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.toyStory, .toyStory img {
+	width: 21%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.moana, .moana img {
+	width: 22%;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
+.chase, .chase img {
+	width: 30%;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+.together {
+	margin-left: 120px;
+}
+
+.virtual {
+	color: mediumvioletred;
+}
+.adorable {
+	color: orangered;
+}
+
+.red {
+	color: firebrick;
+}
+
+.superstar {
+	color: rebeccapurple;
+}
+
+.always {
+	color: snow;
+}
+
+.flew {
+	color: mistyrose;
+}
+
+#letter {
+	position: relative;
+	padding-bottom: 25px;
+
+}
+
+
+
+
+/* Portrait tablet and small desktops */
+
+
+
+
+
+@media (max-width: 1024px) {
+
+	h1 {
+		margin-top: 0px;
+		text-align: center;
+		margin-bottom: 130px;
+	}
+
+	header {
+		background-size: cover;
+		height: 100vh;
+		background-position: center;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav ul li{
+		padding: 15px;
+	}
+
+	.level2Text h2{
+		text-align: center;
+	}
+
+	.level2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		padding-top: 25px;
+		background-color: #1B4D59;
+	}
+
+	.level2Text {
+		width: 100%;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+
+	}
+
+	.level2Text p {
+		margin-top: 40px;
+	}
+
+	.hospitalPic {
+		width: 75%;
+		margin-right: 60px;
+	}
+
+
+	.level3 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: #9FD3BD;
+	}
+
+	
+
+	.level3Text {
+		font-size: 1.6rem;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+		margin-left: 130px;
+		width: 100%;
+	}
+
+	.level3Text p {
+		margin-top: 40px;
+	}
+
+	.level3Text h2 {
+		text-align: center;
+	}
+
+	.edmBaby {
+		width: 80%;
+		margin-top: 30px;
+		margin-left: 240px;
+	}
+
+	.edmBaby video {
+		border: 1px solid black;
+	}
+
+	.level4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding-top: 25px;
+		background-color: #1B4D59;
+	}
+
+	.level4Text {
+		width: 100%;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+		margin-left: 130px;
+	}
+
+	.level4Text h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.level5 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		background: #9FD3BD;
+		color: black;
+		padding-left: 5px;
+		padding-top: 25px;
+	}
+
+
+	.level5Text {
+		width: 90%;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+	}
+
+	.monsterGame {
+		padding-top: 25px;
+	}
+
+	.monsterGame img {
+		border: 1px solid antiquewhite;
+		margin-left: 280px;
+		width: 40%;
+	}
+
+	.monsterGame iframe {
+		border: 1px solid antiquewhite;
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 70%;
+		height: 75%;
+
+	}
+
+	.level6 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		flex-wrap: wrap;
+		background-color: #1B4D59;
+		padding-top: 25px;
+		padding-left: 5px;
+	}
+
+	.level6 h2 {
+		text-align: center;
+	}
+
+	.level6Text {
+		width: 90%;
+		letter-spacing: 1.2px;
+		margin-bottom: 20px;
+	}
+
+	.level6Text p {
+		margin-top: 40px;
+	}
+
+	.selfie video {
+		width: 100%;
+		border: 1px solid antiquewhite;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+
+	.selfie {
+		width: 60%;
+	}
+
+	.gallery {
+		width: 70%;
+		margin-top: 50px;
+	}
+
+	.gallery img {
+		border: 1px solid antiquewhite;
+	}
+
+	.level7 {
+		background: #9FD3BD;
+		color: black;
+		padding-top: 25px;
+		padding-left: 10px;
+		width: 100%;
+	}
+
+	.level7Text {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 100px;
+	}
+
+
+	.memoryVid {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 25px;
+	}
+
+	.memoryVid video {
+		margin: 0 auto;
+		width: 60%;
+	}
+
+	.lightning, .lightning img {
+		width: 25%;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+
+	.toyStory, .toyStory img {
+		width: 20%;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+
+	.moana, .moana img {
+		width: 20%;
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+	}
+
+	.chase, .chase img {
+		width: 30%;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+
+
+	#letter {
+		position: relative;
+		padding-bottom: 25px;
+
+	}
+
+}
+
+
+
+
+/* Landscape phone to portrait tablet */
+
+
+
+
+
+@media (max-width: 768px) {
+
+	h1 {
+		margin-top: 0px;
+		text-align: center;
+		margin-bottom: 130px;
+	}
+
+	header {
+		background-size: cover;
+		height: 100vh;
+		background-position: center;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav ul li{
+		padding: 15px;
+	}
+
+	.level2Text h2{
+		text-align: center;
+	}
+
+	.level2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		padding-top: 25px;
+		background-color: #1B4D59;
+	}
+
+	.level2Text {
+		width: 100%;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+
+	}
+
+	.level2Text p {
+		margin-top: 40px;
+	}
+
+	.hospitalPic {
+		width: 75%;
+		margin-right: 60px;
+	}
+
+
+	.level3 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: #9FD3BD;
+	}
+
+	
+
+	.level3Text {
+		font-size: 1.6rem;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+		margin-left: 130px;
+		width: 100%;
+	}
+
+	.level3Text p {
+		margin-top: 40px;
+	}
+
+	.level3Text h2 {
+		text-align: center;
+	}
+
+	.edmBaby {
+		width: 80%;
+		margin-top: 30px;
+		margin-left: 75px;
+	}
+
+	.edmBaby video {
+		border: 1px solid black;
+	}
+
+	.level4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding-top: 25px;
+		background-color: #1B4D59;
+	}
+
+	.level4Text {
+		width: 100%;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+		margin-left: 130px;
+	}
+
+	.level4Text h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.level5 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		background: #9FD3BD;
+		color: black;
+		padding-left: 5px;
+		padding-top: 25px;
+	}
+
+
+	.level5Text {
+		width: 90%;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+	}
+
+	.monsterGame {
+		padding-top: 25px;
+	}
+
+	.monsterGame img {
+		border: 1px solid antiquewhite;
+		margin: 0 auto;	
+		width: 60%;
+	}
+
+	.monsterGame iframe {
+		border: 1px solid antiquewhite;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.level6 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		flex-wrap: wrap;
+		background-color: #1B4D59;
+		padding-top: 25px;
+		padding-left: 5px;
+	}
+
+	.level6 h2 {
+		text-align: center;
+	}
+
+	.level6Text {
+		width: 90%;
+		letter-spacing: 1.2px;
+		margin-bottom: 20px;
+	}
+
+	.level6Text p {
+		margin-top: 40px;
+	}
+
+	.selfie video {
+		width: 100%;
+		border: 1px solid antiquewhite;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+
+	.selfie {
+		width: 60%;
+	}
+
+	.gallery {
+		width: 70%;
+		margin-top: 50px;
+	}
+
+	.gallery img {
+		border: 1px solid antiquewhite;
+	}
+
+	.level7 {
+		background: #9FD3BD;
+		color: black;
+		padding-top: 25px;
+		padding-left: 10px;
+		width: 100%;
+	}
+
+	.level7Text {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 75px;
+	}
+
+
+	.memoryVid {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 25px;
+	}
+
+
+	.memoryVid video {
+		margin-left: 25px;
+		width: 50%;
+	}
+
+	.together img {
+		width: 50%;
+		margin-left: 25px;
+	}
+
+	.lightning, .lightning img {
+		width: 28%;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+
+	.toyStory, .toyStory img {
+		width: 20%;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+
+	.moana, .moana img {
+		width: 25%;
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+	}
+
+	.chase, .chase img {
+		width: 35%;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+
+	#letter {
+		position: relative;
+		padding-bottom: 25px;
+
+	}
+
+}
+
+
+
+
+/* Landscape phones and down */
+
+
+
+
+@media (max-width: 480px) {
+
+	h1 a {
+		font-size: 6rem;
+	}
+
+	h1 {
+		margin-top: 0px;
+		text-align: center;
+		margin-bottom: 120px;
+	}
+
+	header {
+		background-size: cover;
+		height: 100vh;
+		background-position: right;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav ul li{
+		padding: 6px;
+	}
+
+	.level2Text h2{
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.level2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		padding-top: 25px;
+		background-color: #1B4D59;
+	}
+
+	.level2Text {
+		width: 100%;
+		font-size: 1.2rem;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+
+	}
+
+	.level2Text p {
+		margin-top: 20px;
+	}
+
+	.hospitalPic {
+		width: 75%;
+		margin-right: 60px;
+	}
+
+
+	.level3 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-right: 50px;
+		background-color: #9FD3BD;
+	}
+
+	
+
+	.level3Text {
+		font-size: 1.2rem;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+		margin-left: 130px;
+		width: 100%;
+	}
+
+	.level3Text h2 {
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.edmBaby {
+		width: 100%;
+		margin: 0 auto;	
+	}
+
+	.edmBaby video {
+		border: 1px solid black;
+	}
+
+	.level4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding-top: 25px;
+		background-color: #1B4D59;
+	}
+
+	.level4Text {
+		width: 100%;
+		font-size: 1.2rem;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+		margin-left: 130px;
+	}
+
+	.level4Text h2 {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 30px;
+	}
+
+	.level5 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		background: #9FD3BD;
+		color: black;
+		padding-top: 25px;
+	}
+
+
+	.level5Text {
+		width: 85%;
+		font-size: 1.2rem;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+	}
+
+	.monsterGame {
+		padding-top: 25px;
+	}
+
+	.monsterGame img {
+		border: 1px solid antiquewhite;
+		margin: 0 auto;	
+	}
+
+	.monsterGame iframe {
+		border: 1px solid antiquewhite;
+		margin-top: 30px;
+		margin-left: 30px;
+		width: 80%;
+		height: 80%;
+
+	}
+
+	.level6 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		flex-wrap: wrap;
+		background-color: #1B4D59;
+		padding-top: 25px;
+		padding-left: 5px;
+	}
+
+	.level6 h2 {
+		text-align: center;
+	}
+
+	.level6Text {
+		width: 100%;
+		font-size: 1.2rem;
+		letter-spacing: 1.2px;
+		margin-bottom: 20px;
+	}
+
+	.selfie video {
+		width: 100%;
+		border: 1px solid antiquewhite;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+
+	.selfie {
+		width: 60%;
+	}
+
+	.gallery {
+		width: 70%;
+		margin-top: 50px;
+	}
+
+	.gallery img {
+		border: 1px solid antiquewhite;
+	}
+
+	.level7 {
+		background: #9FD3BD;
+		color: black;
+		padding-top: 25px;
+		padding-left: 10px;
+		width: 100%;
+	}
+
+	.level7Text {
+		width: 70%
+		font-size: 1.2rem;
+		letter-spacing: 1.2px;
+	}
+
+	.memoryVid {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 25px;
+		margin-left: 10px;
+	}
+
+	.memoryVid video {
+		width: 60%;
+		margin-left: 30px;
+	}
+
+	.lightning, .lightning img {
+		width: 40%;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+
+	.toyStory, .toyStory img {
+		width: 30%;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+
+	.moana, .moana img {
+		width: 35%;
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+	}
+
+	.chase, .chase img {
+		width: 40%;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+
+	.together {
+		margin-left: 25px;
+		width: 75%;
+	}
+
+	.together img {
+		width: 100%;
+		margin-left: 0px;
+
+	}
+
+
+	#letter {
+		position: relative;
+		padding-bottom: 25px;
+
+	}
+
+
+}
+
+
+
+/* Media Query for Hamburger Menu */
+
+
+
+@media all and (max-width: 1024px) {
+	.hamburger,
+	.exit-responsive {
+		display: block;
+		font-size: 30px;
+	}
+
+	.hamburger {
+		position: absolute;
+		top: 2%;
+		right: 5%;
+		position: fixed;
+	}
+
+
+	.hamburgerNav {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: turquoise;
+		color: white;
+		height: 100vh;
+	}
+
+	.hamburgerNav ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hamburgerNav ul a {
+		font-size: 2rem;
+		text-align: center;
+		width: 100%;
+		padding: 15px;
+	}
+
+
+}
+
