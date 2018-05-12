@@ -1093,12 +1093,13 @@ ul a:hover {
 	}
 
 	.selfie {
-		width: 60%;
+		width: 70%;
 	}
 
 	.gallery {
 		width: 70%;
 		margin-top: 50px;
+		margin-left: 0;
 	}
 
 	.gallery img {
@@ -1129,7 +1130,7 @@ ul a:hover {
 
 	.memoryVid video {
 		width: 60%;
-		margin-left: 30px;
+		margin-left: 60px;
 	}
 
 	.lightning, .lightning img {
@@ -1167,7 +1168,7 @@ ul a:hover {
 
 	.together img {
 		width: 100%;
-		margin-left: 0px;
+		margin-left: 10px;
 
 	}
 
